@@ -77,7 +77,7 @@ function Confirmation({ roomSummary }: { roomSummary: any }) {
                   <h3 className='text-4xl text-accent'>Your details</h3>
                   <p className='text-white/60'>Please fill out the form below.</p>
     
-                  <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                  <div className='grid grid-cols-1 md:grid-cols-2 gap-6 text-white'>
                     <Input name="firstName" value={formData.firstName} onChange={handleChange} type='text' placeholder='First Name' required />
                     <Input name="lastName" value={formData.lastName} onChange={handleChange} type='text' placeholder='Last Name' required />
                     <Input name="email" value={formData.email} onChange={handleChange} type='email' placeholder='Email Address' required />
