@@ -89,7 +89,7 @@ function Confirmation({ roomSummary }: { roomSummary: any }) {
                   
     
                   <Button type='submit' className='max-w-32 bg-green-400 text-white hover:bg-green-600' disabled={isSubmitting}>
-                    Book
+                    {isSubmitting ? 'Booking...' : 'Book'}
                   </Button>
     
                   {success && <p className="text-green-500">Your message has been sent successfully!</p>}
